@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Serie Numerica</title>
+</head>
+<body>
+    <h1>Serie del 2 al 400 (de 2 en 2)</h1>
+
+    <script>
+        let lista = [];
+        let num = 2;
+
+        while (num <= 400) {
+            lista.push(num);
+            num += 2;
+        }
+
+        let secuencia = "Serie: ";
+        let indice = 0;
+        while (indice < lista.length) {
+            secuencia += lista[indice] + ", ";
+            indice++;
+        }
+
+        let total = 0;
+        let pos = 0;
+        while (pos < lista.length) {
+            total += lista[pos];
+            pos++;
+        }
+        let media = total / lista.length;
+
+        let mitad = Math.floor(lista.length / 2);
+        let med = (lista[mitad - 1] + lista[mitad]) / 2;
+
+        let modaTexto = "Todos los números aparecen una sola vez";
+
+        // Mostrando los resultados con document.write()
+        document.write("<p>" + secuencia + "</p>");
+        document.write("<p>Promedio: " + media + "</p>");
+        document.write("<p>Mediana: " + med + "</p>");
+        document.write("<p>Moda: " + modaTexto + "</p>");
+    </script>
+</body>
+</html>
