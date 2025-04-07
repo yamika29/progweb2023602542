@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Operaciones con Arreglos</title>
+</head>
+<body>
+    <h1>Operaciones con Arreglos de Cadenas, Números y Booleanos</h1>
+    
+    <p id="suma"></p>
+    <p id="concatenacion"></p>
+    <p id="booleano"></p>
+    
+    <script>
+        let numeros = [10, 20, 30, 40]; 
+        let cadenas = ["Hola", " ", "Soy", " Karla :)"]; 
+        let booleanos = [true, false, true, true]; 
+
+        let suma = 0;
+        for (let i = 0; i < numeros.length; i++) {
+            suma += numeros[i];
+        }
+
+        let concatenacion = " ";
+        for (let i = 0; i < cadenas.length; i++) {
+            concatenacion += cadenas[i];
+        }
+
+        let resultadoBooleano = booleanos[0]; 
+        for (let i = 1; i < booleanos.length; i++) {
+            resultadoBooleano = resultadoBooleano && booleanos[i]; 
+        }
+
+        document.getElementById("suma").innerText ="La suma de los números" +  numeros + " es: " + suma;
+        document.getElementById("concatenacion").innerText = "La concatenación de las cadenas es: " + concatenacion;
+        document.getElementById("booleano").innerText = "El resultado de los booleanos es: " + resultadoBooleano;
+    </script>
+</body>
+</html>

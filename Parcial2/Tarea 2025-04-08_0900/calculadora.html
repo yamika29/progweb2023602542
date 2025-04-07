@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <h1>Calculadora</h1>
+        <style>
+            button{
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 60px;
+                border: 1px solid black;
+                font-size: 24px;
+                font-weight: bold;
+                background-color: #FFB8E0;
+            }
+            input{
+                width: 210px;
+                height: 50px; 
+                background-color: #FFEDFA;
+                font-size: 24px; 
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            
+            function btn_click(val) {
+                var display = document.getElementById("display");
+                if (val == "=") {
+                    display.value = eval(display.value);  
+                } else if (val == "C") {
+                    display.value = "";  // Limpiar la pantalla
+                } else {
+                    display.value += val; 
+                }
+            }
+
+    
+            function agregarListenners() {
+                var buttons = document.querySelectorAll('button');
+                buttons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        btn_click(button.innerHTML);
+                    });
+                });
+            }
+        </script>
+    </head>
+    <body onload="agregarListenners()">
+        <input id="display" readonly>
+        <br>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <br>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <br>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>*</button>
+        <br>
+        <button>0</button>
+        <button>C</button>
+        <button>=</button>
+        <button>/</button>
+        <br>
+    </body>
+</html>
