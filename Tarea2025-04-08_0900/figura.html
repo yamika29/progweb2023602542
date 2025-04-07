@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Control de Juegos</title>
+        <h1>Control :)</h1>
+        <style>
+            div {
+                width: 80px;
+                height: 80px;
+                text-align: center;
+                line-height: 60px;
+                border: 1px solid black;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            #div1 {
+                background-color: #D3E671;
+                margin-top: 100px; /* Mueve hacia abajo */
+                margin-left: 400px; /* Mueve hacia la derecha */
+            }
+            #div2 {
+                background-color: #F6F1DE;
+                transform: translate(319px, 0px); 
+            }
+            #div3 {
+                background-color: #E69DB8;
+                transform: translate(400px, -81px); /* Mueve a la derecha y hacia abajo */
+            }
+            #div4 {
+                background-color: #FFD0C7;
+                transform: translate(481px, -163px); 
+            }
+            #div5 {
+                background-color: #FFFECE;
+                transform: translate(800px, -240px); 
+            }
+            #div6 {
+                background-color: #CB92E6;
+                transform: translate(900px, -320px); 
+            }
+        </style>
+        <script>
+            function agregarListeners() {
+                document.addEventListener("keydown", teclado);
+            }
+
+            function teclado(event) {
+                if (event.key === "w" || event.key === "W") {
+                    document.body.style.backgroundColor = "#D3E671"; 
+                } else if (event.key === "a" || event.key === "A") {
+                    document.body.style.backgroundColor = "#F6F1DE";  
+                } else if (event.key === "s" || event.key === "S") {
+                    document.body.style.backgroundColor = "#E69DB8"; 
+                } else if (event.key === "d" || event.key === "D") {
+                    document.body.style.backgroundColor = "#FFD0C7"; 
+                } else if (event.key === "z" || event.key === "Z") {
+                    document.body.style.backgroundColor = "#FFFECE"; 
+                } else if (event.key === "x" || event.key === "X") {
+                    document.body.style.backgroundColor = "#CB92E6"; 
+                }
+            }
+        </script>
+    </head>
+    <body onload="agregarListeners()">
+        <div id="div1">W</div>
+        <div id="div2">A</div>
+        <div id="div3">S</div>
+        <div id="div4">D</div>
+        <div id="div5">Z</div>
+        <div id="div6">X</div>
+    </body>
+</html>
