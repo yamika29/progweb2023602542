@@ -87,7 +87,7 @@ Está desarrollado en **PHP** con base de datos en **MySQL**, y diseño visual m
 
 ## 🌐 Rutas Web
 
-- 🏠 Inicio: [`http://localhost/TRANQUILATTE/Index.php`](http://localhost/TRANQUILATTE/Index.php)  
+- 🏠 Inicio: [`http://localhost/TRANQUILATTE/Index.php`](http://localhost/TRANQUILATTE/login.php)  
 - 🔐 Admin: [`http://localhost/TRANQUILATTE/admin.php`](http://localhost/TRANQUILATTE/admin.php)  
 - 🛒 Cliente: [`http://localhost/TRANQUILATTE/productos.php`](http://localhost/TRANQUILATTE/productos.php)
 
