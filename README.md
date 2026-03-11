@@ -87,7 +87,7 @@ Está desarrollado en **PHP** con base de datos en **MySQL**, y diseño visual m
 
 ## 🌐 Rutas Web
 
-- 🏠 Inicio: [`http://localhost/TRANQUILATTE/login.php`](http://localhost/TRANQUILATTE/login.php)  
+- 🏠 Inicio: [`http://localhost/TRANQUILATTE/login.php`](http://localhost/TRANQUILATTE/index.php)  
 - 🔐 Admin: [`http://localhost/TRANQUILATTE/admin.php`](http://localhost/TRANQUILATTE/admin.php)  
 - 🛒 Cliente: [`http://localhost/TRANQUILATTE/productos.php`](http://localhost/TRANQUILATTE/productos.php)
 
@@ -147,3 +147,4 @@ Proyecto desarrollado por el equipo de **TRANQUILATTE**:
 - **Hernández Peña Karla Yamileth**  
 - **Campos Torralva Ángel Iván**  
 - **De Jesús Palma Johana Michelle**
+
